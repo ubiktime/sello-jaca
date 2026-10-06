@@ -5,6 +5,31 @@ import heroPlaceholder from "../assets/photo-placeholder-hero.png";
 import accentPromesa from "../assets/accent-promesa-white.png";
 import accentCierre from "../assets/accent-cierre-tinta.png";
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Sello Jaca",
+  description: "Diseño web en Jaca y la Jacetania con precios publicados. Diagnóstico de visibilidad en 72 h, webs rápidas en ES/EN/FR y ficha de Google a tu nombre.",
+  url: "https://sellojaca.es",
+  telephone: "+34641314730",
+  email: "sellojaca@protonmail.com",
+  priceRange: "350 € – 2.500 €",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Calle La Iglesia 11, Villanovilla",
+    postalCode: "22710",
+    addressLocality: "Jaca",
+    addressRegion: "Huesca",
+    addressCountry: "ES",
+  },
+  areaServed: [
+    { "@type": "City", name: "Jaca" },
+    { "@type": "AdministrativeArea", name: "La Jacetania" },
+  ],
+  founder: { "@type": "Person", name: "Tomasz Ferdynand Goetel" },
+  sameAs: ["https://www.instagram.com/sellojaca"],
+};
+
 const servicios = [
   { nombre: "Diagnóstico", precio: "350 €" },
   { nombre: "Web Esencial", precio: "desde 950 €" },
@@ -27,6 +52,7 @@ const masPreguntas = [
   title="Sello Jaca — Diseño web en Jaca | Webs y visibilidad en Google"
   description="Diseño web en Jaca y la Jacetania con precios publicados. Diagnóstico de visibilidad en 72 h, webs rápidas en ES/EN/FR y ficha de Google a tu nombre."
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
   <!-- 1. Hero -->
   <section class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 sm:py-24 lg:grid-cols-2">
     <div>
