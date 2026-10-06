@@ -1,0 +1,78 @@
+---
+import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import fuero from "../assets/fuero-iacca-page.png";
+import iaccaCutout from "../assets/iacca-cutout.png";
+import carta1164 from "../assets/carta-1164-front.png";
+import retratoPlaceholder from "../assets/photo-placeholder-portrait.png";
+---
+
+<Base
+  title="¿Por qué «sello»? — Sello Jaca"
+  description="El nombre Sello Jaca nace del Fuero de 1076 y de los sellos del Camino de Santiago. Diseño web en Jaca; por escrito trabajo en español, inglés y francés."
+>
+  <!-- 1. El nombre -->
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:py-20">
+    <h1 class="text-3xl font-bold sm:text-4xl">¿Por qué «sello»?</h1>
+    <p class="mt-6 text-lg">
+      Jaca fue capital de un reino porque un rey puso su marca en un papel. En el Camino de Santiago, el sello de cada etapa demuestra que estuviste allí. Un sello es eso: una huella pequeña que prueba algo grande.
+    </p>
+    <p class="mt-4 text-lg">
+      Tu negocio merece lo mismo: una presencia en internet tuya, firmada, a tu nombre.
+    </p>
+  </section>
+
+  <!-- 2. Exhibición: IACCA, 1076 -->
+  <section class="border-y border-tinta/10 bg-tinta/5">
+    <div class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 lg:grid-cols-2">
+      <figure class="relative">
+        <Image src={fuero} alt="Página del Fuero de Jaca de 1076, con la línea «in mea villa que dicitur IACCA» resaltada" width={828} class="rounded-md shadow-md" />
+        <div class="pointer-events-none absolute left-[21.5%] top-[51.9%] h-[3.2%] w-[50.5%] rounded-sm bg-cera/30 mix-blend-multiply" aria-hidden="true"></div>
+      </figure>
+      <div>
+        <Image src={iaccaCutout} alt="La palabra IACCA, extraída del Fuero de Jaca de 1076" width={235} class="iacca-lift w-[235px] max-w-full" />
+        <hr class="mt-6 w-24 border-t-2 border-cera" />
+        <p class="mt-6 text-2xl font-bold">«…en mi villa llamada IACCA.»</p>
+        <p class="mt-6">
+          Un rey funda una ciudad poniendo su marca en un papel. Dos líneas más abajo: «constitui IACCAm esse civitatem» — la constituyó ciudad. El acta fundacional de Jaca es un documento firmado.
+        </p>
+        <p class="mt-8 text-xs text-piedra">Fuero de Jaca, 1076. DARA — Documentos y Archivos de Aragón (dara.aragon.es)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Exhibición: la carta de 1164 -->
+  <section class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 lg:grid-cols-2">
+    <figure>
+      <Image src={carta1164} alt="Carta de venta de Jaca del año 1164, con el signo del notario dibujado al pie" width={828} class="rounded-md shadow-md" />
+    </figure>
+    <div>
+      <p class="text-lg">
+        Ochenta y ocho años después, un notario de Jaca cierra una carta de venta dibujando su propio signo al pie del documento.
+      </p>
+      <p class="mt-8 text-xs text-piedra">Carta de venta, Jaca, 1164. DARA — Documentos y Archivos de Aragón (dara.aragon.es)</p>
+    </div>
+  </section>
+
+  <!-- 4. La persona -->
+  <section class="border-t border-tinta/10 bg-tinta/5">
+    <div class="mx-auto grid max-w-5xl items-start gap-10 px-4 py-16 sm:grid-cols-[240px_1fr]">
+      <Image src={retratoPlaceholder} alt="Retrato de Tomasz (imagen temporal, pendiente de la sesión de fotos)" width={480} class="rounded-md" />
+      <div>
+        <h2 class="text-3xl font-bold">Trabajo en tu idioma.</h2>
+        <p class="mt-4 text-lg">
+          Por escrito trabajo en español, inglés y francés: es mi forma preferida de trabajar, porque todo queda claro y guardado. En persona, mi español hablado es funcional y mi francés es básico; por eso en las reuniones enseño en vez de contar: la pantalla delante, con tus datos, tus capturas y tus números. Y los textos de tu web los revisan siempre nativos antes de publicarse.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Cierre -->
+  <section class="mx-auto max-w-3xl px-4 py-16 text-center">
+    <h2 class="text-3xl font-bold">Hablemos.</h2>
+    <div class="mt-6 flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/34641314730" class="rounded-md bg-cera px-5 py-3 font-semibold text-white hover:bg-cera-oscura">WhatsApp</a>
+      <a href="mailto:sellojaca@protonmail.com" class="rounded-md border border-tinta/25 px-5 py-3 font-semibold hover:border-tinta">sellojaca@protonmail.com</a>
+    </div>
+  </section>
+</Base>
