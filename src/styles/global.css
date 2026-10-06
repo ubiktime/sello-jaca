@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --color-cera: #9a1b30;
+  --color-cera-oscura: #6e1223;
+  --color-pergamino: #f7f2e7;
+  --color-tinta: #1c1917;
+  --color-piedra: #57534e;
+  --font-sans: "Inter Variable", system-ui, -apple-system, sans-serif;
+}
