@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import lockupWhite from "../assets/lockup-white.png";
+---
+
+<footer class="bg-tinta text-pergamino">
+  <div class="mx-auto flex max-w-5xl flex-col gap-6 px-4 py-10">
+    <a href="/" aria-label="Sello Jaca — inicio" class="block">
+      <Image src={lockupWhite} alt="Sello Jaca" width={180} />
+    </a>
+    <p class="text-sm">Deja tu sello en internet.</p>
+    <p class="text-sm">
+      <a href="mailto:sellojaca@protonmail.com" class="underline underline-offset-4 hover:text-white">sellojaca@protonmail.com</a>
+      ·
+      <a href="https://wa.me/34641314730" class="underline underline-offset-4 hover:text-white">+34 641 314 730</a>
+    </p>
+    <nav class="flex gap-6 text-xs text-pergamino/70" aria-label="Legal">
+      <a href="/aviso-legal/" class="hover:text-white">Aviso legal</a>
+      <a href="/privacidad/" class="hover:text-white">Privacidad</a>
+    </nav>
+    <p class="text-xs text-pergamino/50">© 2026 Sello Jaca · Jaca, Huesca</p>
+  </div>
+</footer>

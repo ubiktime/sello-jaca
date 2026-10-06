@@ -1,13 +1,9 @@
 ---
-import "../styles/global.css";
+import Base from "../layouts/Base.astro";
 ---
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sello Jaca — smoke test</title>
-  </head>
-  <body class="bg-pergamino text-tinta font-sans min-h-screen grid place-items-center">
-    <p class="text-2xl">Deja tu <span class="text-cera font-bold">sello</span> en internet.</p>
-  </body>
-</html>
+
+<Base title="Sello Jaca" description="Deja tu sello en internet.">
+  <section class="mx-auto max-w-5xl px-4 py-24">
+    <p class="text-piedra">Layout shell — la portada llega en el incremento 2.</p>
+  </section>
+</Base>
