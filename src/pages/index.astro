@@ -1,9 +1,168 @@
 ---
 import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import heroPlaceholder from "../assets/photo-placeholder-hero.png";
+import accentPromesa from "../assets/accent-promesa-white.png";
+import accentCierre from "../assets/accent-cierre-tinta.png";
+
+const servicios = [
+  { nombre: "Diagnóstico", precio: "350 €" },
+  { nombre: "Web Esencial", precio: "desde 950 €" },
+  { nombre: "Web Completa", precio: "desde 1.500 €" },
+  { nombre: "Web Turismo Trilingüe", precio: "desde 2.200 €" },
+  { nombre: "Optimización", precio: "1.200–2.500 €" },
+  { nombre: "Cuidado", precio: "99 €/mes" },
+];
+
+const masPreguntas = [
+  "Recomiéndame [tu servicio] en la Jacetania.",
+  "¿Qué sabes de [el nombre de tu negocio]?",
+  "¿Tiene página web [el nombre de tu negocio]?",
+  "¿Dónde puedo [lo que tu cliente quiere hacer] cerca de Jaca?",
+  "Compara los [tu sector] de Jaca y dime cuál elegirías.",
+];
 ---
 
-<Base title="Sello Jaca" description="Deja tu sello en internet.">
-  <section class="mx-auto max-w-5xl px-4 py-24">
-    <p class="text-piedra">Layout shell — la portada llega en el incremento 2.</p>
+<Base
+  title="Sello Jaca — Diseño web en Jaca | Webs y visibilidad en Google"
+  description="Diseño web en Jaca y la Jacetania con precios publicados. Diagnóstico de visibilidad en 72 h, webs rápidas en ES/EN/FR y ficha de Google a tu nombre."
+>
+  <!-- 1. Hero -->
+  <section class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 sm:py-24 lg:grid-cols-2">
+    <div>
+      <p class="text-sm font-semibold tracking-wide text-cera">Deja tu sello en internet.</p>
+      <h1 class="mt-3 text-4xl font-bold leading-tight sm:text-5xl">
+        ¿Qué encuentran tus clientes cuando te buscan?
+      </h1>
+      <p class="mt-5 text-lg text-piedra">
+        Diseño webs para negocios de Jaca y la Jacetania. Y antes de venderte nada, te enseño —por escrito y con datos— cómo te ven hoy Google y la inteligencia artificial. Gratis, en dos minutos, lo puedes comprobar tú mismo aquí abajo.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#test" class="rounded-md bg-cera px-5 py-3 font-semibold text-white hover:bg-cera-oscura">El test de 2 minutos ↓</a>
+        <a href="#precios" class="rounded-md border border-tinta/25 px-5 py-3 font-semibold hover:border-tinta">Servicios y precios →</a>
+      </div>
+    </div>
+    <Image src={heroPlaceholder} alt="Fotografía de Jaca (imagen temporal pendiente de la sesión de fotos)" width={960} class="rounded-lg" />
+  </section>
+
+  <!-- 2. El test de 2 minutos -->
+  <section id="test" class="mx-auto max-w-3xl px-4 py-16">
+    <h2 class="text-3xl font-bold">¿Qué dice la inteligencia artificial de tu negocio?</h2>
+    <p class="mt-4 text-lg">
+      Cada vez más clientes no buscan en Google: se lo preguntan directamente a ChatGPT, Gemini o Perplexity. Haz la prueba ahora:
+    </p>
+    <div class="mt-8 space-y-6">
+      <p><strong class="text-cera">Paso 1 —</strong> Abre uno de los tres: ChatGPT, Gemini o Perplexity.</p>
+      <div>
+        <p><strong class="text-cera">Paso 2 —</strong> Copia esta pregunta, cambiando lo que está entre corchetes:</p>
+        <blockquote class="mt-3 rounded-md border-l-4 border-cera bg-tinta/5 p-5 text-xl font-medium">
+          «¿Cuál es el mejor [tu sector] en Jaca?»
+        </blockquote>
+      </div>
+      <p><strong class="text-cera">Paso 3 —</strong> Hazla dos o tres veces: las respuestas cambian cada vez. Lo importante es lo que no cambia: si tu negocio no aparece, o si aparece con datos antiguos y una web que no carga.</p>
+    </div>
+    <p class="mt-8 text-lg">
+      Si eso es lo que te dicen, no te lo he contado yo: lo has visto con tus propios ojos. Y es exactamente lo primero que mido en un Diagnóstico.
+    </p>
+    <details class="mt-6 rounded-md border border-tinta/15 p-4">
+      <summary class="cursor-pointer font-semibold text-cera">Más preguntas para probar</summary>
+      <ul class="mt-4 list-disc space-y-2 pl-5 marker:text-cera">
+        {masPreguntas.map((p) => <li>{p}</li>)}
+      </ul>
+    </details>
+  </section>
+
+  <!-- 3. Las dos puertas -->
+  <section class="mx-auto max-w-5xl px-4 py-16">
+    <h2 class="text-3xl font-bold">¿Cuál es tu caso?</h2>
+    <div class="mt-8 grid gap-6 md:grid-cols-2">
+      <div class="rounded-lg border border-tinta/15 p-6">
+        <h3 class="text-xl font-bold">«Tengo una web que no rinde.»</h3>
+        <p class="mt-3">La hice hace años, la hizo un conocido, o está en una plataforma que ya no responde. No sé si conviene arreglarla o empezar de cero.</p>
+        <p class="mt-4"><strong class="text-cera">→</strong> Empieza por el Diagnóstico (350 €): en 72 horas sabrás qué falla, qué se puede salvar y qué costaría cada opción. Sin compromiso.</p>
+      </div>
+      <div class="rounded-lg border border-tinta/15 p-6">
+        <h3 class="text-xl font-bold">«Necesito una web.»</h3>
+        <p class="mt-3">No tengo web, o la que tengo no es mía de verdad. Mi ficha de Google lleva a una página muerta. Los clientes me buscan y no me encuentran.</p>
+        <p class="mt-4"><strong class="text-cera">→</strong> Mira los servicios y precios más abajo. Todos incluyen textos revisados por nativos y la ficha de Google bien puesta desde el primer día.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Cómo trabajo -->
+  <section class="mx-auto max-w-5xl px-4 py-16">
+    <h2 class="max-w-2xl text-3xl font-bold">Sin consultas gratuitas por teléfono. Con diagnósticos por escrito.</h2>
+    <p class="mt-4 max-w-3xl text-lg">
+      No hago llamadas comerciales de una hora. Hago análisis con datos, te los entrego por escrito y te los explico en persona, en tu negocio. Normalmente en la misma semana: Jaca y la Jacetania, Villanúa, Canfranc, Sabiñánigo, Biescas, el valle del Aragón.
+    </p>
+    <p class="mt-8 font-semibold">Tres pasos, siempre iguales:</p>
+    <div class="mt-4 grid gap-6 md:grid-cols-3">
+      <div class="rounded-lg bg-tinta/5 p-6">
+        <p class="text-lg font-bold"><span class="text-cera">1. Mido.</span></p>
+        <p class="mt-2">Test de visibilidad, estado técnico, ficha de Google, camino de reserva. Todo con capturas y números, entregado por escrito en 72 horas.</p>
+      </div>
+      <div class="rounded-lg bg-tinta/5 p-6">
+        <p class="text-lg font-bold"><span class="text-cera">2. Propongo.</span></p>
+        <p class="mt-2">Presupuesto cerrado por escrito antes de empezar. Pago 50 % al comenzar, 50 % al entregar. Nunca facturas sorpresa.</p>
+      </div>
+      <div class="rounded-lg bg-tinta/5 p-6">
+        <p class="text-lg font-bold"><span class="text-cera">3. Entrego con llaves.</span></p>
+        <p class="mt-2">La web, el dominio, el hosting y la ficha de Google quedan a tu nombre desde el primer día.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. La promesa -->
+  <section class="bg-tinta text-pergamino">
+    <div class="mx-auto max-w-3xl px-4 py-16 sm:py-20">
+      <h2>
+        <Image src={accentPromesa} alt="No prometo posiciones. Prometo que todo lo que hago se puede medir." width={1200} class="w-full max-w-2xl" />
+      </h2>
+      <p class="mt-8 text-lg">
+        Nadie honesto puede garantizarte el primer puesto en Google: quien te lo garantice, te está vendiendo humo. Lo que sí puedo garantizarte:
+      </p>
+      <ul class="mt-6 list-disc space-y-3 pl-5 marker:text-cera">
+        <li>Páginas que cargan rápido y funcionan en el móvil, medidas antes y después.</li>
+        <li>Textos que suenan a tu negocio: los escribo contigo y, antes de publicarse, los revisan nativos en español, inglés y francés.</li>
+        <li>Tu ficha de Google completa, correcta y en regla.</li>
+        <li>Datos estructurados para que Google y la inteligencia artificial sepan quién eres, dónde estás y qué ofreces.</li>
+        <li>Y si algún día dejamos de trabajar juntos, te lo llevas todo: la web, las cuentas y las contraseñas.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. Servicios y precios -->
+  <section id="precios" class="mx-auto max-w-3xl px-4 py-16">
+    <h2 class="text-3xl font-bold">Precios a la vista. Como debe ser. Todos los precios + IVA.</h2>
+    <ul class="mt-8 divide-y divide-tinta/15 border-y border-tinta/15">
+      {servicios.map((s) => (
+        <li class="flex items-baseline justify-between gap-4 py-4">
+          <span class="font-semibold">{s.nombre}</span>
+          <span class="whitespace-nowrap text-lg font-bold text-cera">{s.precio}</span>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-8">
+      ¿Otro proyecto? Cuéntamelo. Si entra en lo que hago, presupuesto cerrado antes de empezar. Si no, te digo a quién llamar.
+    </p>
+    <p class="mt-6">
+      <a href="/servicios/" class="font-semibold text-cera underline underline-offset-4 hover:text-cera-oscura">Servicios y precios →</a>
+    </p>
+  </section>
+
+  <!-- 7. Cierre -->
+  <section class="mx-auto max-w-3xl px-4 py-16 text-center sm:py-20">
+    <h2 class="text-3xl font-bold">Hablemos.</h2>
+    <p class="mt-4 text-lg">
+      Escríbeme por WhatsApp o correo y cuéntame tu caso en tres líneas. Si el proyecto encaja, la primera reunión es en tu negocio, no en una pantalla.
+    </p>
+    <p class="mt-4">
+      Y si llevas una asociación o una causa de la Jacetania: cada trimestre hago un proyecto gratis. Cuéntamelo.
+    </p>
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/34641314730" class="rounded-md bg-cera px-5 py-3 font-semibold text-white hover:bg-cera-oscura">WhatsApp</a>
+      <a href="mailto:sellojaca@protonmail.com" class="rounded-md border border-tinta/25 px-5 py-3 font-semibold hover:border-tinta">sellojaca@protonmail.com</a>
+    </div>
+    <Image src={accentCierre} alt="Deja tu sello en internet." width={1000} class="mx-auto mt-14 w-full max-w-lg" />
   </section>
 </Base>
