@@ -1,0 +1,85 @@
+---
+import Base from "../layouts/Base.astro";
+
+const servicios = [
+  {
+    nombre: "Diagnóstico",
+    precio: "350 €",
+    texto: "Cinco páginas en PDF, en 72 horas: cómo te ve Google, qué dice la IA de ti, qué falla técnicamente, si tu dominio y tu hosting son realmente tuyos, y qué costaría arreglarlo. Si me encargas la reparación en los 30 días siguientes, los 350 € se descuentan íntegramente.",
+    revision: false,
+  },
+  {
+    nombre: "Web Esencial",
+    precio: "desde 950 €",
+    texto: "Una página clara y rápida: quién eres, qué ofreces, dónde estás y cómo contactarte. Ficha de Google incluida. Plazo orientativo: dos semanas desde que tengo tus textos y fotos.",
+    revision: true,
+  },
+  {
+    nombre: "Web Completa",
+    precio: "desde 1.500 €",
+    texto: "Varias páginas, galería, menús o servicios, formulario de contacto y todo lo de la Esencial. Plazo orientativo: de tres a cuatro semanas.",
+    revision: true,
+  },
+  {
+    nombre: "Web Turismo Trilingüe",
+    precio: "desde 2.200 €",
+    texto: "Español, inglés y francés con revisión de nativos en los tres idiomas. Pensada para casas rurales, alojamientos, restaurantes y actividades que viven del cliente internacional. Plazo orientativo: de cuatro a seis semanas.",
+    revision: true,
+  },
+  {
+    nombre: "Optimización",
+    precio: "1.200–2.500 €",
+    texto: "Reparación y mejora de tu web actual. Solo después de un Diagnóstico: no arreglo a ciegas.",
+    revision: true,
+  },
+  {
+    nombre: "Cuidado",
+    precio: "99 €/mes",
+    texto: "Cambios de contenido, copias de seguridad, pequeñas mejoras continuas y un ojo permanente en tu ficha de Google.",
+    revision: false,
+  },
+];
+---
+
+<Base
+  title="Servicios y precios — Sello Jaca"
+  description="Servicios de diseño web en Jaca y la Jacetania con precios publicados: diagnóstico de visibilidad en 72 horas, webs esenciales y completas, turismo trilingüe ES/EN/FR, optimización y cuidado continuo."
+>
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:py-20">
+    <h1 class="text-3xl font-bold sm:text-4xl">Precios a la vista. Como debe ser. Todos los precios + IVA.</h1>
+
+    <div class="mt-10 divide-y divide-tinta/15 border-y border-tinta/15">
+      {servicios.map((s) => (
+        <article class="py-8">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h2 class="text-2xl font-bold">{s.nombre}</h2>
+            <p class="text-xl font-bold text-cera">{s.precio}</p>
+          </div>
+          <p class="mt-3 text-lg">{s.texto}</p>
+          {s.revision && (
+            <p class="mt-3 text-sm font-semibold text-piedra">Incluye dos rondas de revisión.</p>
+          )}
+        </article>
+      ))}
+    </div>
+
+    <p class="mt-10 text-lg">
+      ¿Otro proyecto? Cuéntamelo. Si entra en lo que hago, presupuesto cerrado antes de empezar. Si no, te digo a quién llamar.
+    </p>
+
+    <div class="mt-8 rounded-lg border border-tinta/15 bg-tinta/5 p-6">
+      <h2 class="text-lg font-bold">Lo que no hago</h2>
+      <p class="mt-2">
+        Tiendas online grandes, sistemas de reservas a medida, gestión de redes sociales, aplicaciones. No es un «quizás»: es un «no» honesto, con recomendación incluida.
+      </p>
+    </div>
+
+    <div class="mt-12 text-center">
+      <h2 class="text-3xl font-bold">Hablemos.</h2>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/34641314730" class="rounded-md bg-cera px-5 py-3 font-semibold text-white hover:bg-cera-oscura">WhatsApp</a>
+        <a href="mailto:sellojaca@protonmail.com" class="rounded-md border border-tinta/25 px-5 py-3 font-semibold hover:border-tinta">sellojaca@protonmail.com</a>
+      </div>
+    </div>
+  </section>
+</Base>
