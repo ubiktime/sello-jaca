@@ -36,7 +36,9 @@ const ogImageURL = new URL("/og-image.png", Astro.site);
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <slot name="head" />
+        <slot name="head" />
+        <!-- Cloudflare Web Analytics -->
+        <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "afbb13047a4b40d98881c008c4d0cef9"}'></script>
   </head>
   <body class="flex min-h-screen flex-col bg-pergamino font-sans text-tinta antialiased">
     <Header />
