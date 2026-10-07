@@ -1,34 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
 
-const servicios = [
-  {
-    nombre: "Diagnóstico",
-    precio: "350 €",
-    texto: "Cinco páginas en PDF, en 72 horas: cómo te ven Google y la inteligencia artificial —en español, inglés y francés—, qué falla técnicamente, si tu dominio y tu hosting son realmente tuyos, y qué costaría arreglarlo. Si me encargas la reparación en los 30 días siguientes, los 350 € se descuentan íntegramente.",
-  },
-  {
-    nombre: "Web Esencial",
-    precio: "desde 950 €",
-    texto: "Una página clara y rápida: qué ofreces, dónde estás, horarios y WhatsApp. Ficha de Google incluida. Plazo orientativo: dos semanas desde que tengo tus textos y fotos.",
-  },
-  {
-    nombre: "Web Turismo Trilingüe",
-    precio: "desde 2.200 €",
-    texto: "Español, inglés y francés con revisión de nativos en los tres idiomas. Fechas de temporada, reserva por WhatsApp, fotos de las camas y de los platos. Pensada para albergues, hostales y alojamientos: el peregrino reserva en su idioma, o reserva en otro sitio. Plazo orientativo: de cuatro a seis semanas.",
-  },
-  {
-    nombre: "Optimización",
-    precio: "1.200–2.500 €",
-    texto: "Reparación y mejora de tu web actual. Solo después de un Diagnóstico: no arreglo a ciegas.",
-  },
-  {
-    nombre: "Cuidado",
-    precio: "99 €/mes",
-    texto: "Cambios de contenido, copias de seguridad, fechas de temporada siempre al día y un ojo permanente en tu ficha de Google.",
-  },
-];
-
 const hallazgos = [
   "Webs que llevan meses caídas mientras la ficha de Google sigue mandando peregrinos a una página muerta.",
   "Fotos de hace diez años y precios de otra temporada.",
@@ -111,8 +83,7 @@ const hallazgos = [
 
   <!-- 5. Servicios y precios -->
   <section id="precios" class="mx-auto max-w-3xl px-4 pb-16">
-    <h2 class="text-3xl font-bold">Precios a la vista. Como debe ser. Todos los precios + IVA.</h2>
-    <div class="mt-10 divide-y divide-tinta/15 border-y border-tinta/15">
+    <h2 class="text-3xl font-bold">Precios a la vista. Como debe ser. Todos los precios + IVA (21 %).</h2>
       		<p class="mt-8 text-lg">
 			La puerta de entrada es el <a href="/servicios/#diagnostico" class="font-semibold text-cera hover:text-cera-oscura">Diagnóstico</a>: cinco páginas en PDF, en 72 horas —y si me encargas la reparación en los 30 días siguientes, se descuenta íntegramente—. Para albergues y alojamientos, la pieza clave es la <a href="/servicios/#web-turismo-trilingue" class="font-semibold text-cera hover:text-cera-oscura">Web Turismo Trilingüe</a>: el peregrino reserva en su idioma, o reserva en otro sitio.
 		</p>
