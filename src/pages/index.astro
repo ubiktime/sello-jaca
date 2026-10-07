@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { Image } from "astro:assets";
-import heroPlaceholder from "../assets/photo-placeholder-hero.png";
+import hero from "../assets/hero.jpg";
 import accentPromesa from "../assets/accent-promesa-white.png";
 import accentCierre from "../assets/accent-cierre-tinta.png";
 
@@ -68,7 +68,7 @@ const masPreguntas = [
         <a href="#precios" class="rounded-md border border-tinta/25 px-5 py-3 font-semibold hover:border-tinta">Servicios y precios →</a>
       </div>
     </div>
-    <Image src={heroPlaceholder} alt="Fotografía de Jaca (imagen temporal pendiente de la sesión de fotos)" width={960} class="rounded-lg" />
+    <Image src={hero} alt="Ilustración de la Ciudadela de Jaca" width={960} densities={[1, 2]} loading="eager" fetchpriority="high" class="rounded-lg" />
   </section>
 
   <!-- 2. El test de 2 minutos -->
