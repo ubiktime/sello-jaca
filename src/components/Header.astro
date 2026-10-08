@@ -4,6 +4,7 @@ import lockupInk from "../assets/lockup-ink.png";
 
 const nav = [
   { href: "/servicios/", label: "Servicios" },
+  { href: "/trabajos/", label: "Trabajos" },
   { href: "/clinica-web-del-camino/", label: "Clínica del Camino" },
   { href: "/sobre/", label: "Sobre" },
   { href: "/contacto/", label: "Contacto" },
@@ -16,9 +17,9 @@ const nav = [
       <Image src={lockupInk} alt="Sello Jaca" width={200} densities={[1, 2]} loading="eager" />
     </a>
 
-    <nav class="hidden items-center gap-8 sm:flex" aria-label="Principal">
+    <nav class="hidden items-center gap-8 lg:flex" aria-label="Principal">
       {nav.map((item) => (
-        <a href={item.href} class="text-sm font-medium text-tinta underline-offset-4 hover:text-cera hover:underline">
+        <a href={item.href} class="whitespace-nowrap text-sm font-medium text-tinta underline-offset-4 hover:text-cera hover:underline">
           {item.label}
         </a>
       ))}
@@ -27,13 +28,13 @@ const nav = [
       </a>
     </nav>
 
-    <details class="relative sm:hidden">
+    <details class="relative lg:hidden">
       <summary class="cursor-pointer list-none rounded-md border border-tinta/20 px-3 py-2 text-sm font-medium marker:hidden">
         Menú
       </summary>
       <nav class="absolute right-0 top-full mt-2 flex w-48 flex-col gap-1 rounded-md border border-tinta/10 bg-pergamino p-2 shadow-lg" aria-label="Principal móvil">
         {nav.map((item) => (
-          <a href={item.href} class="rounded px-3 py-2 text-sm font-medium hover:bg-tinta/5">
+          <a href={item.href} class="whitespace-nowrap rounded px-3 py-2 text-sm font-medium hover:bg-tinta/5">
             {item.label}
           </a>
         ))}

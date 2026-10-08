@@ -1,0 +1,97 @@
+---
+import Base from "../layouts/Base.astro";
+import { Image } from "astro:assets";
+import trabajoHerbolarbio from "../assets/trabajo-herbolarbio.png";
+import trabajoUnrushed from "../assets/trabajo-theunrushedmind.png";
+import trabajoProperPages from "../assets/trabajo-properpages.png";
+---
+
+<Base
+  title="Trabajos — Sello Jaca"
+  description="Tres trabajos reales: Herbolarbio en Jaca, The Unrushed Mind en Leeds y Proper Pages, mi marca británica. Capturas y enlaces a las webs en vivo."
+>
+  <!-- 1. Intro: dos marcas, una persona -->
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:py-20">
+    <h1 class="text-3xl font-bold sm:text-4xl">Trabajos.</h1>
+    <p class="mt-6 text-lg">
+      Tres trabajos reales. Dos los firmé como Proper Pages, mi marca para el mercado británico: detrás de las dos marcas hay una sola persona y un solo criterio.
+    </p>
+  </section>
+
+  <!-- 2. Herbolarbio -->
+  <section class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 lg:grid-cols-2">
+    <figure>
+      <a href="https://herbolarbio.com/" target="_blank" rel="noopener" aria-label="Visita herbolarbio.com (se abre en una pestaña nueva)">
+        <Image src={trabajoHerbolarbio} alt="Portada de herbolarbio.com: distribuidora B2B de productos ecológicos del Pirineo Aragonés" width={960} class="drop-shadow-xl" />
+      </a>
+    </figure>
+    <div>
+      <h2 class="text-2xl font-bold">Herbolarbio — Jaca.</h2>
+      <p class="mt-4 text-lg">
+        Distribuidora B2B de productos ecológicos del Pirineo Aragonés. Web rápida, con estructura y datos estructurados para que Google entienda qué hace y dónde está. Es además mi caso de estudio en medición: registro sus datos de búsqueda durante 90 días y publicaré el antes y el después con números, no con adjetivos.
+      </p>
+      <p class="mt-6">
+        <a href="https://herbolarbio.com/" target="_blank" rel="noopener" class="font-semibold text-cera underline underline-offset-4 hover:text-cera-oscura">Visita herbolarbio.com →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. The Unrushed Mind -->
+  <section class="border-t border-tinta/10 bg-tinta/5">
+    <div class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 lg:grid-cols-2">
+      <figure>
+        <a href="https://theunrushedmind.com/" target="_blank" rel="noopener" aria-label="Visita theunrushedmind.com (se abre en una pestaña nueva)">
+          <Image src={trabajoUnrushed} alt="Portada de theunrushedmind.com: coaching de TDAH y bienestar en Leeds" width={960} class="drop-shadow-xl" />
+        </a>
+      </figure>
+      <div>
+        <h2 class="text-2xl font-bold">The Unrushed Mind — Leeds, Reino Unido.</h2>
+        <p class="mt-4 text-lg">
+          Coaching de TDAH y bienestar. Web completa en inglés — estructura, textos y reserva de citas — para una clienta que necesitaba que su web transmitiera la misma calma que su trabajo. Firmada como Proper Pages.
+        </p>
+        <p class="mt-6">
+          <a href="https://theunrushedmind.com/" target="_blank" rel="noopener" class="font-semibold text-cera underline underline-offset-4 hover:text-cera-oscura">Visita theunrushedmind.com →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Proper Pages -->
+  <section class="mx-auto grid max-w-5xl items-center gap-10 px-4 py-16 lg:grid-cols-2">
+    <figure>
+      <a href="https://properpages.co.uk/" target="_blank" rel="noopener" aria-label="Visita properpages.co.uk (se abre en una pestaña nueva)">
+        <Image src={trabajoProperPages} alt="Portada de properpages.co.uk: la marca británica de Sello Jaca" width={960} class="drop-shadow-xl" />
+      </a>
+    </figure>
+    <div>
+      <h2 class="text-2xl font-bold">Proper Pages — mi marca británica.</h2>
+      <p class="mt-4 text-lg">
+        La incluyo porque también es obra mía de principio a fin: diseño, textos y código. Si quieres ver cómo trabajo cuando el cliente soy yo, empieza aquí.
+      </p>
+      <p class="mt-6">
+        <a href="https://properpages.co.uk/" target="_blank" rel="noopener" class="font-semibold text-cera underline underline-offset-4 hover:text-cera-oscura">Visita properpages.co.uk →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CONCEPTOS: las futuras piezas de concepto van aquí, con el mismo formato de módulo y la etiqueta «Concepto — no es un cliente real». No publicar huecos vacíos. -->
+
+  <!-- 5. Los datos de esta web -->
+  <section class="border-t border-tinta/10 bg-tinta/5">
+    <div class="mx-auto max-w-3xl px-4 py-16">
+      <h2 class="text-3xl font-bold">Los datos de esta web.</h2>
+      <p class="mt-4 text-lg">
+        Esta web se mide como mido las de mis clientes. Auditoría Lighthouse en móvil, 6 de octubre de 2026: 100/100 en accesibilidad, buenas prácticas y SEO en las siete páginas; 98–100 en rendimiento según la pasada. Las capturas completas acompañan cada <a href="/servicios/#diagnostico" class="font-semibold text-cera underline underline-offset-4 hover:text-cera-oscura">Diagnóstico</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- 6. Cierre -->
+  <section class="mx-auto max-w-3xl px-4 py-16 text-center">
+    <h2 class="text-3xl font-bold">Hablemos.</h2>
+    <div class="mt-6 flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/34641314730" class="rounded-md bg-cera px-5 py-3 font-semibold text-white hover:bg-cera-oscura">WhatsApp</a>
+      <a href="mailto:sellojaca@protonmail.com" class="rounded-md border border-tinta/25 px-5 py-3 font-semibold hover:border-tinta">sellojaca@protonmail.com</a>
+    </div>
+  </section>
+</Base>
