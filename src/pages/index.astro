@@ -72,7 +72,7 @@ const masPreguntas = [
   </section>
 
   <!-- 2. El test de 2 minutos -->
-  <section id="test" class="mx-auto max-w-3xl px-4 py-16">
+  <section id="test" class="mx-auto max-w-5xl px-4 py-16 [&>*]:max-w-3xl">
     <h2 class="text-3xl font-bold">¿Qué dice la inteligencia artificial de tu negocio?</h2>
     <p class="mt-4 text-lg">
       Cada vez más clientes no buscan en Google: se lo preguntan directamente a ChatGPT, Gemini o Perplexity. Haz la prueba ahora:
@@ -140,7 +140,7 @@ const masPreguntas = [
 
   <!-- 5. La promesa -->
   <section class="bg-tinta text-pergamino">
-    <div class="mx-auto max-w-3xl px-4 py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-4 py-16 sm:py-20 [&>*]:max-w-3xl">
       <h2>
         <Image src={accentPromesa} alt="No prometo posiciones. Prometo que todo lo que hago se puede medir." width={1200} class="w-full max-w-2xl" />
       </h2>
@@ -158,7 +158,8 @@ const masPreguntas = [
   </section>
 
   <!-- 6. Servicios y precios -->
-  <section id="precios" class="mx-auto max-w-3xl px-4 py-16">
+  <section id="precios" class="mx-auto max-w-5xl px-4 py-16 [&>*]:max-w-3xl">
+
     <h2 class="text-3xl font-bold">Precios a la vista. Como debe ser. Todos los precios + IVA (21 %).</h2>
     <ul class="mt-8 divide-y divide-tinta/15 border-y border-tinta/15">
       {servicios.map((s) => (
@@ -177,7 +178,7 @@ const masPreguntas = [
   </section>
 
   <!-- 7. Cierre -->
-  <section class="mx-auto max-w-3xl px-4 py-16 text-center sm:py-20">
+  <section class="mx-auto max-w-5xl px-4 py-16 text-center sm:py-20 [&>*]:mx-auto [&>*]:max-w-3xl">
     <h2 class="text-3xl font-bold">Hablemos.</h2>
     <p class="mt-4 text-lg">
       Escríbeme por WhatsApp o correo y cuéntame tu caso en tres líneas. Si el proyecto encaja, la primera reunión es en tu negocio, no en una pantalla.
