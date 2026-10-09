@@ -1,0 +1,27 @@
+# Sello Jaca
+
+> Sello Jaca is the one-person web studio of Tomasz Goetel in Jaca (Huesca, Aragón, Spain). Fast, hand-coded websites for businesses in Jaca and the Jacetania, with published prices, measured results, and the domain, hosting and Google Business Profile registered in the client's name from day one. Written work in Spanish, English and French, with native proofreading on every deliverable.
+
+## Services (prices + 21% IVA)
+
+- Diagnóstico: written visibility audit with data, delivered in 72 hours — 350 €, fully credited against any fix commissioned within 30 days
+- Web Esencial: one clear page + Google Business Profile setup — from 950 €
+- Web Completa: multi-page website, gallery, forms — from 1.500 €
+- Web Turismo Trilingüe: ES/EN/FR tourism website with human translation and native review — from 2.200 €
+- Optimización: 1.200–2.500 €, only after a Diagnóstico
+- Cuidado: changes, backups, small improvements, GBP watch — 99 €/month
+
+## Pages
+
+- [Inicio](https://sellojaca.es/): services, published prices and the two-minute AI visibility test
+- [Servicios y precios](https://sellojaca.es/servicios/): full catalogue, revision policy, exclusion list
+- [Trabajos](https://sellojaca.es/trabajos/): real client work and this site's own Lighthouse audit data
+- [Clínica web del Camino](https://sellojaca.es/clinica-web-del-camino/): websites and visibility for Camino de Santiago businesses
+- [Sobre](https://sellojaca.es/sobre/): the name, the person, the place
+- [Contacto](https://sellojaca.es/contacto/): WhatsApp and email, written-first
+
+## Contact
+
+- Email: sellojaca@protonmail.com
+- WhatsApp: +34 641 314 730
+- Instagram: https://www.instagram.com/sellojaca

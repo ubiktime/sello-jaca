@@ -1,43 +1,15 @@
-# Astro Starter Kit: Minimal
+# Sello Jaca
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Sitio web de Sello Jaca — diseño web en Jaca (Huesca) con precios publicados, medición honesta y todo a nombre del cliente desde el primer día.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Website of Sello Jaca — web design in Jaca, Spain: published prices, measured results, and the client owns everything from day one.
 
-## 🚀 Project Structure
+## Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+Astro + Tailwind CSS v4, static site on Cloudflare Pages. Self-hosted Inter via Fontsource — no Google Fonts. The only third-party request is the cookieless Cloudflare Web Analytics beacon.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Quality
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Lighthouse mobile audits for every page are archived in `/lighthouse/` — 100 in accessibility, best practices and SEO; 97–100 in performance.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Live: https://sellojaca.es (pre-launch: https://sello-jaca.pages.dev)
