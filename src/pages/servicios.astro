@@ -6,14 +6,14 @@ const servicios = [
     id: "diagnostico",
     nombre: "Diagnóstico",
     precio: "350 €",
-    texto: "Cinco páginas en PDF, en 72 horas: cómo te ve Google, qué dice la IA de ti, qué falla técnicamente, si tu dominio y tu hosting son realmente tuyos, y qué costaría arreglarlo. Si me encargas la reparación en los 30 días siguientes, los 350 € se descuentan íntegramente.",
+    texto: "Cinco páginas en PDF, en 72 horas: cómo te ve Google, qué dice la IA de ti, qué falla técnicamente, si tu dominio y tu hosting son realmente tuyos, y qué costaría arreglarlo. Si me encargas la reparación o la web nueva en los 30 días siguientes, los 350 € se descuentan íntegramente.",
     revision: false,
   },
   {
     id: "web-esencial",
     nombre: "Web Esencial",
     precio: "desde 950 €",
-    texto: "Una página clara y rápida: quién eres, qué ofreces, dónde estás y cómo contactarte. Ficha de Google incluida. Plazo orientativo: dos semanas desde que tengo tus textos y fotos.",
+    texto: "Una página clara y rápida: quién eres, qué ofreces, dónde estás y cómo contactarte. Ficha de Google incluida. Plazo orientativo: dos semanas desde la primera visita a tu negocio.",
     revision: true,
   },
   {
@@ -41,7 +41,7 @@ const servicios = [
     id: "cuidado",
     nombre: "Cuidado",
     precio: "99 €/mes",
-    texto: "Cambios de contenido, copias de seguridad, pequeñas mejoras continuas y un ojo permanente en tu ficha de Google.",
+    texto: "Cambios de contenido, copias de seguridad, pequeñas mejoras continuas y un ojo permanente en tu ficha de Google. Sin permanencia: lo dejas cuando quieras, con un mensaje. Si algo crece hasta ser un proyecto, te lo presupuesto aparte antes de tocar nada.",
     revision: false,
   },
 ];
@@ -53,6 +53,13 @@ const servicios = [
 >
   <section class="mx-auto max-w-5xl px-4 pb-16 pt-8 sm:py-20 [&>*]:max-w-3xl">
     <h1 class="text-3xl font-bold sm:text-4xl">Precios a la vista. Como debe ser. Todos los precios + IVA (21 %).</h1>
+
+    <p class="mt-6 text-lg">
+      Los textos los escribo yo contigo: tú me cuentas tu negocio, yo los redacto, y antes de publicar los revisan nativos. Las fotos las hago yo en la visita. Los plazos cuentan desde esa primera visita.
+    </p>
+    <p class="mt-4 text-lg">
+      Pago 50 % al comenzar, 50 % al entregar. Nunca facturas sorpresa. Si cancelas a mitad de camino, pagas solo lo hecho: lo pone el presupuesto firmado, no la letra pequeña.
+    </p>
 
     <div class="mt-10 divide-y divide-tinta/15 border-y border-tinta/15">
       {servicios.map((s) => (
@@ -69,6 +76,13 @@ const servicios = [
       ))}
     </div>
 
+    <div class="mt-12">
+      <h2 class="text-2xl font-bold">Lo que pagas cada año.</h2>
+      <p class="mt-3 text-lg">
+        El dominio: unos 12–15 € al año, a tu nombre desde el primer día. El hosting: 0 € en la plataforma que uso (Cloudflare). Cuidado: opcional, nunca obligatorio. Y si un día prefieres llevártelo todo, te lo llevas: tu único gasto anual sigue siendo el dominio.
+      </p>
+    </div>
+
     <p class="mt-10 text-lg">
       ¿Otro proyecto? Cuéntamelo. Si entra en lo que hago, presupuesto cerrado antes de empezar. Si no, te digo a quién llamar.
     </p>
@@ -82,6 +96,9 @@ const servicios = [
 
     <div class="mx-auto mt-12 text-center">
       <h2 class="text-3xl font-bold">Hablemos.</h2>
+      <p class="mt-4 text-lg">
+        Antes de escribirme, mira cómo trabajo: <a href="/trabajos/" class="font-semibold text-cera underline underline-offset-4 hover:text-cera-oscura">Trabajos y datos →</a>
+      </p>
       <div class="mt-6 flex flex-wrap justify-center gap-4">
         <a href="https://wa.me/34641314730" class="rounded-md bg-cera px-5 py-3 font-semibold text-white hover:bg-cera-oscura">WhatsApp</a>
         <a href="mailto:sellojaca@protonmail.com" class="rounded-md border border-tinta/25 px-5 py-3 font-semibold hover:border-tinta">sellojaca@protonmail.com</a>
