@@ -12,4 +12,4 @@ Astro + Tailwind CSS v4, static site on Cloudflare Pages. Self-hosted Inter via 
 
 Lighthouse mobile audits for every page are archived in `/lighthouse/` — 100 in accessibility, best practices and SEO; 97–100 in performance.
 
-Live: https://sellojaca.es (pre-launch: https://sello-jaca.pages.dev)
+Live: https://sellojaca.es
